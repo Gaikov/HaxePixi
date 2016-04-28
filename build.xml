@@ -61,4 +61,8 @@
 		<example.build example.name="VideoTexture"/>
 	</target>
 
+	<target name="Build.RenderToTexture">
+		<example.build example.name="RenderToTexture"/>
+	</target>
+
 </project>
