@@ -45,4 +45,9 @@
 		<example.build example.name="Click"/>
 	</target>
 
+
+	<target name="Build.TileSprite">
+		<example.build example.name="TileSprite"/>
+	</target>
+
 </project>

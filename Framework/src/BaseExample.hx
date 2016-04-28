@@ -17,9 +17,16 @@ class BaseExample
 		Browser.window.requestAnimationFrame(loop);
 	}
 
+	public var renderer(get, null):SystemRenderer;
+
+	private function get_renderer():SystemRenderer
+	{
+		return _renderer;
+	}
+
 	public var stage(get, null):Container;
 
-	public function get_stage():Container
+	private function get_stage():Container
 	{
 		return _stage;
 	}
