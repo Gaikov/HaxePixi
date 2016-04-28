@@ -45,9 +45,12 @@
 		<example.build example.name="Click"/>
 	</target>
 
-
 	<target name="Build.TileSprite">
 		<example.build example.name="TileSprite"/>
+	</target>
+
+	<target name="Build.TextFields">
+		<example.build example.name="TextFields"/>
 	</target>
 
 </project>
