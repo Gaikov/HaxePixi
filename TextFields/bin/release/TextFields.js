@@ -39,7 +39,6 @@ var TextFields = function() {
 	var richText = new PIXI.Text("Rich text with a lot of options and across multiple lines",style);
 	richText.x = 30;
 	richText.y = 180;
-	richText.scale.x = 2;
 	this.get_stage().addChild(richText);
 };
 TextFields.main = function() {
