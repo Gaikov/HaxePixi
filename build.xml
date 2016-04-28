@@ -37,4 +37,8 @@
 		<example.build example.name="DisplayContainer"/>
 	</target>
 
+	<target name="Build.SpriteSheetAnimation">
+		<example.build example.name="SpriteSheetAnimation"/>
+	</target>
+
 </project>

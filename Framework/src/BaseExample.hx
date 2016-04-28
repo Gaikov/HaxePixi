@@ -3,6 +3,7 @@ import pixi.core.renderers.Detector;
 import js.Browser;
 import pixi.core.renderers.SystemRenderer;
 import pixi.core.display.Container;
+
 class BaseExample
 {
 	private var _renderer:SystemRenderer;
