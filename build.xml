@@ -53,4 +53,8 @@
 		<example.build example.name="TextFields"/>
 	</target>
 
+	<target name="Build.GraphicVectors">
+		<example.build example.name="GraphicVectors"/>
+	</target>
+
 </project>

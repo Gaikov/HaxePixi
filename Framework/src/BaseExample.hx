@@ -12,9 +12,14 @@ class BaseExample
 
 	public function new()
 	{
-		_renderer = Detector.autoDetectRenderer(800, 600, {backgroundColor:0x1099bb});
+		_renderer = Detector.autoDetectRenderer(800, 600, prepareRenderOptions());
 		Browser.document.body.appendChild(_renderer.view);
 		Browser.window.requestAnimationFrame(loop);
+	}
+
+	private function prepareRenderOptions():RenderingOptions
+	{
+		return {backgroundColor:0x1099bb};
 	}
 
 	public var renderer(get, null):SystemRenderer;
