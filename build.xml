@@ -1,0 +1,36 @@
+<project name="Haxe pixi build">
+
+	<macrodef name="example.build">
+		<attribute name="example.name"/>
+
+		<sequential>
+			<exec executable="haxe" failonerror="true">
+				<arg value="-main"/>
+				<arg value="@{example.name}"/>
+
+				<arg value="-cp"/>
+				<arg value="@{example.name}/src"/>
+
+				<arg value="-cp"/>
+				<arg value="Framework/src"/>
+
+				<arg value="-lib"/>
+				<arg value="pixijs"/>
+
+				<arg value="-js"/>
+				<arg value="@{example.name}/bin/release/@{example.name}.js"/>
+			</exec>
+
+			<filter token="example.name" value="@{example.name}"/>
+
+			<copy todir="@{example.name}/bin" filtering="true">
+				<fileset dir="Framework/template"/>
+			</copy>
+		</sequential>
+	</macrodef>
+
+	<target name="Build.Basics">
+		<example.build example.name="Basics"/>
+	</target>
+
+</project>
