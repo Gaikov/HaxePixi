@@ -41,4 +41,8 @@
 		<example.build example.name="SpriteSheetAnimation"/>
 	</target>
 
+	<target name="Build.Click">
+		<example.build example.name="Click"/>
+	</target>
+
 </project>
