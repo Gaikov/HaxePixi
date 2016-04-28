@@ -33,4 +33,8 @@
 		<example.build example.name="Basics"/>
 	</target>
 
+	<target name="Build.DisplayContainer">
+		<example.build example.name="DisplayContainer"/>
+	</target>
+
 </project>
