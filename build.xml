@@ -65,4 +65,8 @@
 		<example.build example.name="RenderToTexture"/>
 	</target>
 
+	<target name="Build.TexturedMesh">
+		<example.build example.name="TexturedMesh"/>
+	</target>
+
 </project>
