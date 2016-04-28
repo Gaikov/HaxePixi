@@ -12,11 +12,8 @@ class VideoTexture extends BaseExample
 		super();
 
 
-		var video = Browser.document.createVideoElement();
-		video.src = "_assets/testVideo.mp4";
-
-// create a video texture from a video element
-		var texture = Texture.fromVideo(video);
+// create a video texture from a url
+		var texture = Texture.fromVideoUrl("_assets/testVideo.mp4");
 
 // create a new Sprite using the video texture (yes it's that easy)
 		var videoSprite = new Sprite(texture);

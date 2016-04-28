@@ -34,11 +34,7 @@ BaseExample.prototype = {
 };
 var VideoTexture = function() {
 	BaseExample.call(this);
-	var video;
-	var _this = window.document;
-	video = _this.createElement("video");
-	video.src = "_assets/testVideo.mp4";
-	var texture = PIXI.Texture.fromVideo(video);
+	var texture = PIXI.Texture.fromVideoUrl("_assets/testVideo.mp4");
 	var videoSprite = new PIXI.Sprite(texture);
 	videoSprite.width = this.get_renderer().width;
 	videoSprite.height = this.get_renderer().height;
