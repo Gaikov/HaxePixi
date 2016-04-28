@@ -1,0 +1,4 @@
+-main Basics
+-cp src
+-lib pixijs
+-js bin/release/Basics.js
