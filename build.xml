@@ -69,4 +69,8 @@
 		<example.build example.name="TexturedMesh"/>
 	</target>
 
+	<target name="Build.CustomFilter">
+		<example.build example.name="CustomFilter"/>
+	</target>
+
 </project>
